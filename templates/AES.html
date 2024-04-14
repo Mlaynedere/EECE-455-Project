@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptographic Encryptions</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='AES.css') }}">
+</head>
+<body>
+    <nav>
+        <h1 class="title" align="left">Advanced Encryption Standard</h1>
+    
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/DES">DES</a></li>
+          <li><a href="/Polyn">Polyn</a></li>
+        </ul>
+      </nav>
+    <p class ="description">
+        Advanced Encryption Standard (AES) is a symmetric encryption algorithm widely used for securing electronic data. It was established as a 
+        standard by the U.S. National Institute of Standards and Technology (NIST) in 2001, replacing the older Data Encryption Standard (DES). AES 
+        operates on fixed block sizes of 128 bits and supports key lengths of 128, 192, or 256 bits.
+
+        The algorithm consists of multiple rounds of substitution, permutation, and mixing operations, performed on a block of plaintext data using a series 
+        of keys derived from the original encryption key. These operations are designed to provide strong security while also enabling efficient implementation 
+        on a variety of hardware platforms.
+
+        AES has become one of the most widely used encryption algorithms due to its security, efficiency, and versatility. It is employed in various 
+        applications, including securing communication channels, protecting stored data, and ensuring the integrity of sensitive information in computer 
+        systems and networks.
+        </p>
+        <main>
+            <form action="" method="post">
+                <label for="plain">Enter Text:</label>
+                <input type="text" name="plain"><br>
+                <label for="key">Enter Key:</label>
+                <input type="text" name="key"><br>
+
+                <input type="submit" name="encrypt" value="Encrypt">
+                <input type="submit" name="decrypt" value="Decrypt">
+            </form>
+            <h2>Result: {{ proc }}</h2>
+            <h2>{{ result }}</h2>
+        </main>
+</body>
+</html>

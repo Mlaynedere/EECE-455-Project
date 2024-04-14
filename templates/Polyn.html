@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptographic Encryptions</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Polyn.css') }}">
+</head>
+<body>
+    <nav>
+        <h1 class="title" align="left">Polynomial Arithmetic</h1>
+    
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/DES">DES</a></li>
+          <li><a href="/AES-CCM">AES</a></li>
+        </ul>
+      </nav>
+    <p class ="description">
+        This functionality implements arithmetic operations on polynomials within the Galois Field GF(2^m), where m is set to 163. The operations 
+        include modulo reduction, finding inverses, addition, subtraction, multiplication, and division. The implementation is designed to be modular and 
+        extendable to other standard powers such as 163, 233, 239, 283, 409, and 571.
+
+        Users can input polynomial expressions and the program will provide outputs in both hexadecimal and polynomial formats. This allows 
+        for easy manipulation and analysis of polynomials within the specified Galois Field, enabling efficient cryptographic operations and mathematical 
+        computations in fields of study such as cryptography, error correction, and coding theory.
+        </p>
+        <!-- <main>
+            <form action="" method="post">
+                <label for="plain">Enter Text:</label>
+                <input type="text" name="plain"><br>
+                <label for="key">Enter Key:</label>
+                <input type="text" name="key"><br>
+
+                <input type="submit" name="encrypt" value="Encrypt">
+                <input type="submit" name="decrypt" value="Decrypt">
+            </form>
+            <h2>Result: {{ proc }}</h2>
+            <h2>{{ result }}</h2>
+        </main>
+</body>
+</html> -->
