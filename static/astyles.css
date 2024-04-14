@@ -29,6 +29,7 @@ nav {
   font-weight: bold;
   font-size: 40px;
   margin-top: 20px;
+  margin-right: 650px;
 }
 
 .nav-links {
@@ -48,7 +49,7 @@ nav {
   font-weight: bold;
   font-size: 40px;
   padding: 14px 16px;
-  
+  margin-left: 700px;
 }
 
 .nav-links a:hover {
@@ -61,20 +62,71 @@ main {
 }
 
 
-.description-q {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 100px;
-  font-weight: bold;
-  line-height: 5;
-  margin: 0 auto; /* Center align */
-  max-width: 200px; /* Limit width */
+.main {
+  padding: 200px;
 }
+
+
 
 .description {
   font-family: 'Montserrat', sans-serif;
   color: #000000;
-  font-size: 40px;
-  line-height: 1.5;
-  margin: 15px auto; /* Center align */
-  max-width: 2000px; /* Limit width */
+  font-size: 35px; /* Adjusted font size */
+  line-height: 2; /* Adjusted line height */
+  text-align: left; /* Align text to the left */
+  max-width: 1500px; /* Limit width */
+  margin-right: 1500px; /* Center horizontally */
+  border: 2px solid #0da5e1; /* Border color */
+  border-radius: 50px; /* Border radius */
+  padding: 20px; /* Padding inside the container */
+}
+
+
+.names-container{
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  margin-left: 1500px;
+  margin-top: -1000px;
+  width: 575px;
+  border: none;
+  
+}
+
+.names-container a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px; /* Adjusted font size */
+  color: #000000;
+  border: 2px solid #0da5e1; /* Border color */
+  border-radius: 50px; /* Border radius */
+  padding: 10px 20px; /* Adjust padding to fit border */
+  margin-left: -50px;
+  margin-top: 65px;
+  margin-bottom: -50px; /* Added margin between names */
+  transition: color 0.5s;
+}
+
+.names-container a:hover {
+  color: #0da5e1;
+  text-decoration: none;
+  position: relative;
+  animation: underline_grow 0.5s ;
+}
+
+.names-container a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #0da5e1;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.names-container a:hover:after{
+  width: 100%;
 }
