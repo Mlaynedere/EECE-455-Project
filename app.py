@@ -17,7 +17,7 @@ def DES():
 
 @app.route("/AES-CCM")
 def AES():
-     return render_template('AES.html')
+     return render_template('DES2.html')
 
 @app.route("/Polyari")
 def Polyari():

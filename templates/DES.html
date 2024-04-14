@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptographic Encryptions</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='DES.css') }}">
+</head>
+<body>
+    <nav>
+        <h1 class="title" align="left">Data Encryption Standard</h1>
+    
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+        </ul>
+      </nav>
+    <p class ="description">
+        DES, or Data Encryption Standard, is a symmetric-key block cipher algorithm used for encryption and decryption of digital data. 
+        It was developed by IBM in the early 1970s and later standardized by the U.S. National Institute of Standards and Technology (NIST) in 1977. 
+        DES operates on 64-bit blocks of plaintext and uses a 56-bit key for encryption and decryption.
+
+        The algorithm consists of multiple rounds of permutation and substitution, including key generation, initial permutation, and a series of 16 
+        identical rounds of permutation and substitution. Each round involves a combination of bitwise operations, such as substitution using S-boxes and 
+        permutation using P-boxes, to transform the input data and key.
+
+        DES was widely used for secure communication and data protection for several decades but has since been replaced by more secure encryption algorithms 
+        due to advances in computing power and cryptographic attacks. However, DES remains a fundamental algorithm in the history of cryptography and serves as 
+        the basis for more modern encryption standards.
+        </p>
+        <main>
+            <form action="" method="post">
+                <label for="plain">Enter Text:</label>
+                <input type="text" name="plain"><br>
+                <label for="key">Enter Key:</label>
+                <input type="text" name="key"><br>
+
+                <input type="submit" name="encrypt" value="Encrypt">
+                <input type="submit" name="decrypt" value="Decrypt">
+            </form>
+            <h2>Result: {{ proc }}</h2>
+            <h2>{{ result }}</h2>
+        </main>
+</body>
+</html>
